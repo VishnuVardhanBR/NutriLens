@@ -39,7 +39,7 @@ class _NewScanState extends State<NewScan> {
           ),
         ),
         child: BackdropFilter(
-          filter: ImageFilter.blur(sigmaX: 1.5, sigmaY: 1.5),
+          filter: ImageFilter.blur(sigmaX: 2.5, sigmaY: 2.5),
           child: Center(
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
