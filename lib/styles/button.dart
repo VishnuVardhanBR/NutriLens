@@ -11,3 +11,4 @@ final ButtonStyle buttonPrimary = ElevatedButton.styleFrom(
   //     milliseconds: 1000),
   splashFactory: InkRipple.splashFactory,
 );
+c
