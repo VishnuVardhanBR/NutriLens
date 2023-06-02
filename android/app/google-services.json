@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "742438237263",
+    "project_id": "nutrilens-9d14f",
+    "storage_bucket": "nutrilens-9d14f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:742438237263:android:800aaf4499c45abe1f263a",
+        "android_client_info": {
+          "package_name": "com.example.nutri_lens"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "742438237263-04c0o063486btmortj5cnvnrkhdf6rg0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAf4kHTMDcBKJZiWzFRRE2bdQ1I1yn-vqA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "742438237263-04c0o063486btmortj5cnvnrkhdf6rg0.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "742438237263-85g7kfkctv6umatd36et4fp1mpeta6mc.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.nutriLens"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

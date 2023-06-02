@@ -8,14 +8,12 @@ import 'package:nutri_lens/styles/button.dart';
 
 class NewScan extends StatefulWidget {
   const NewScan({super.key});
-
   @override
   State<NewScan> createState() => _NewScanState();
 }
 
 class _NewScanState extends State<NewScan> {
   File? image;
-
   Future pickImage(ImageSource source) async {
     try {
       final image = await ImagePicker().pickImage(source: source);
@@ -28,36 +26,39 @@ class _NewScanState extends State<NewScan> {
   }
 
   @override
+  // void initState() {
+  //   super.initState();
+  //   loadModel();
+  // }
+
+  // Future loadModel() async {
+  //   Tflite.close();
+  //   String? res = await Tflite.loadModel(
+  //     model: "assets/model/food_01_03_23.tflite",
+  //     labels: "assets/model/labels.txt",
+  //   );
+  // }
+
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.transparent,
-      body: Container(
-        decoration: BoxDecoration(
-          image: DecorationImage(
-            image: AssetImage("assets/images/background_image.jpg"),
-            fit: BoxFit.cover,
-          ),
-        ),
-        child: BackdropFilter(
-          filter: ImageFilter.blur(sigmaX: 2.5, sigmaY: 2.5),
-          child: Center(
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                ElevatedButton(
-                    style: buttonPrimary,
-                    onPressed: () => pickImage(ImageSource.camera),
-                    child: Text("Take Photo")),
-                SizedBox(
-                  height: 20,
-                ),
-                ElevatedButton(
-                    style: buttonPrimary,
-                    onPressed: () => pickImage(ImageSource.gallery),
-                    child: Text("Choose Photo"))
-              ],
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            ElevatedButton(
+                style: buttonPrimary,
+                onPressed: () => pickImage(ImageSource.camera),
+                child: const Text("Take Photo")),
+            const SizedBox(
+              height: 20,
             ),
-          ),
+            ElevatedButton(
+                style: buttonPrimary,
+                onPressed: () => pickImage(ImageSource.gallery),
+                child: const Text("Choose Photo"))
+          ],
         ),
       ),
     );
