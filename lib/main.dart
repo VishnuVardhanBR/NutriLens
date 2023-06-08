@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'pages/login_page.dart';
 import 'navbar.dart';
 
-
 void main() {
   runApp(const MyApp());
 }
@@ -14,12 +13,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Food Detection App',
+      title: 'Nutri Lens',
       debugShowCheckedModeBanner: false,
       initialRoute: '/',
       routes: {
         '/': (context) => LoginPage(),
-        '/navbar': (context) => NavBar(),
+        '/navbar': (context) => const NavBar(),
       },
     );
   }
