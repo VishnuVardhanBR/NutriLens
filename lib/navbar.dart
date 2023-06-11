@@ -1,3 +1,4 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
 import 'package:nutri_lens/pages/pages.dart';
@@ -7,6 +8,10 @@ class NavBar extends StatefulWidget {
   const NavBar({super.key});
   @override
   State<NavBar> createState() => _NavBarState();
+}
+
+void signUserOut() {
+  FirebaseAuth.instance.signOut();
 }
 
 class _NavBarState extends State<NavBar> {
@@ -77,6 +82,11 @@ class _NavBarState extends State<NavBar> {
                 onTap: () {},
                 leading: Icon(Icons.info_outline),
                 title: Text('About'),
+              ),
+              ListTile(
+                onTap: signUserOut,
+                leading: Icon(Icons.login_outlined),
+                title: Text('Logout'),
               ),
               Spacer(),
               DefaultTextStyle(
