@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:nutri_lens/navbar.dart';
 import 'package:nutri_lens/pages/login_page.dart';
 
+import 'login_or_register_page.dart';
+
 class AuthPage extends StatelessWidget {
   const AuthPage({super.key});
 
@@ -15,7 +17,7 @@ class AuthPage extends StatelessWidget {
           if (snapshot.hasData) {
             return const NavBar();
           } else {
-            return LoginPage();
+            return const LoginOrRegisterPage();
           }
         },
       ),
