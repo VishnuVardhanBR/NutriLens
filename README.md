@@ -1,16 +1,26 @@
-# nutri_lens
+# NutriLens
 
-A new Flutter project.
+NutriLens is a mobile application that helps users identify and classify different types of food using machine learning techniques. It provides information about the nutritional content of various food items and allows users to make informed dietary choices.
 
-## Getting Started
+## Features
 
-This project is a starting point for a Flutter application.
+- Food Detection: Take a photo or choose an image from the gallery to identify and classify the food item using machine learning.
+- Nutritional Information: Get detailed nutritional information about the detected food, including calories, macronutrients, and vitamins.
+- Scan History: View a history of previously scanned food items and access their nutritional information.
+- User Profile: Create and manage a user profile with personalized settings and preferences.
 
-A few resources to get you started if this is your first Flutter project:
+## Installation
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+1. Clone the repository: `git clone https://github.com/your-username/NutriLens.git`
+2. Install the necessary dependencies: `flutter pub get`
+3. Run the app on a simulator or physical device: `flutter run`
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Technologies Used
+
+- Flutter: A cross-platform framework for building mobile applications.
+- TensorFlow Lite: A lightweight machine learning framework for deploying models on mobile and embedded devices.
+- Firebase: A backend-as-a-service platform for authentication, storage, and database functionalities.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
